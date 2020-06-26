@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   }
 });
 
-const TextCard = () => {
+const TextCard = ({ text, content, link, linkText }) => {
   const classes = useStyles();
 
   return (
@@ -25,15 +25,15 @@ const TextCard = () => {
           className={classes.title}
           color="textSecondary"
           gutterBottom
-          text="Welcome to FitFeel"
+          text={text}
         />
         <Text
           variant="h5"
-          text="An app to check-in mentally before & after workouts to keep your mind just as fit as your body."
+          text={content}
         />
       </CardContent>
       <CardActions>
-        <Button to="/about" text="Learn More" />
+        <Button to={link} text={linkText} />
       </CardActions>
     </Card>
   )

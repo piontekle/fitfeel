@@ -16,7 +16,12 @@ const Landing = () => {
   const classes = useStyles();
   return (
     <Grid className={classes.root} container>
-      <Card />
+      <Card
+        text="Welcome to FitFeel"
+        content="An app to check-in mentally before & after workouts to keep your mind just as fit as your body."
+        link="/about"
+        linkText="Learn More"
+      />
     </Grid>
   )
 }
