@@ -28,7 +28,7 @@ const NavBar = () => {
       <AppBar position="static">
         <Toolbar>
           <MenuDrawer className={classes.menu} />
-          <Text text="FitFeel" />
+          <Text variant="h6" className={classes.title} text="FitFeel" />
           <Button to="/" text="Register/Login" />
         </Toolbar>
       </AppBar>

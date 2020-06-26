@@ -8,7 +8,8 @@ const ListItemLink = ({
   text,
   icon,
   index,
-  goTo
+  goTo,
+  color
 }) => {
   const [selectedIndex, setSelectedIndex] = useState(false);
 
@@ -16,8 +17,16 @@ const ListItemLink = ({
     setSelectedIndex(index);
   }
 
+  const styles = {
+    white: {
+      color: "#D3D3D3",
+      fontWeight: "bold",
+      textDecoration: "none"
+    }
+  }
+
   return (
-    <Link to={goTo}>
+    <Link to={goTo} style={styles[color]}>
       <ListItem
         button={isButton || isMenu}
         selected={isMenu && selectedIndex === index}

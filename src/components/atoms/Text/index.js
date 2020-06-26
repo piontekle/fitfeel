@@ -1,9 +1,13 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 
-const Text = ({ text }) => {
+const Text = ({
+  text,
+  className,
+  variant
+}) => {
   return (
-    <Typography>
+    <Typography variant={variant} className={className}>
       {text}
     </Typography>
   )

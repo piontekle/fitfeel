@@ -25,13 +25,14 @@ const MenuDrawer = ({ isAuth }) => {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {["About", "Resources"].map((text, i) => {
+        {["HOME", "ABOUT", "RESOURCES"].map((text, i) => {
           return <ListItem
             key={i}
             isMenu={true}
             text={text}
             index={i}
             goTo={`/${text.toLowerCase()}`}
+            color="white"
           />
         })}
       </List>
