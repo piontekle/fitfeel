@@ -4,10 +4,15 @@ import { Typography } from "@material-ui/core";
 const Text = ({
   text,
   className,
-  variant
+  variant,
+  component
 }) => {
   return (
-    <Typography variant={variant} className={className}>
+    <Typography
+      variant={variant}
+      component={component}
+      className={className}
+    >
       {text}
     </Typography>
   )
