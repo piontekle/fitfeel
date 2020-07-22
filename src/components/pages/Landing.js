@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from "@material-ui/core";
 
-import { TextCard as Card, WelcomeCard } from "../../components";
+import { WelcomeCard } from "../../components";
 
 const useStyles = makeStyles({
   root: {

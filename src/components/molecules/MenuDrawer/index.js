@@ -3,7 +3,6 @@ import { Drawer, List, Divider, } from "@material-ui/core";
 
 import {
   Button,
-  ButtonLink,
   ListItemLink as ListItem
 } from "../../../components";
 
